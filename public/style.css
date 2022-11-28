@@ -1,0 +1,42 @@
+body{
+    padding: 0px;
+    margin: 0px
+}
+
+#container, #overlay {
+    /*background:#fff;*/
+    position: relative;
+}
+#canvas {
+    position: absolute;
+    background-color: white;
+    border: 1px solid red;
+}
+#overlay {
+    border: 1px solid black;
+    cursor: crosshair;
+}
+#output
+{
+  height: 224px;
+  overflow: auto;
+  background: #ffe;
+}
+#coords{
+    overflow-y: scroll;
+    height: 100px;
+    resize: none; /* Remove this if you want the user to resize the textarea */
+}
+#collectinfo{
+  background-color: lightblue;
+  padding-top: 12pt;
+  padding-bottom: 12pt;
+}
+#screencap{
+  background-color: lightgreen;
+  padding-top: 12pt;
+  padding-bottom: 12pt;
+}
+/*#iframe{
+  display:none
+}*/

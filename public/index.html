@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Take Screenshot</title>
+<!--    <style>
+        #canvas {
+            border: 1px solid red;
+        }
+    </style>-->
+</head>
+<body>
+    <div id="container">
+        <canvas id="canvas">Some text.</canvas>
+        <canvas id="overlay">Some More text.</canvas>
+    </div>
+    <div id="collectinfo">
+        <p>FileName: <input id="text1" type="text" size="120" placeholder="Enter a name for the screenshot" required></br> 
+        <p>URL: <input id="text2" type="text" size="120" placeholder="Enter a URL" required> <button id="btn1" onclick="fn1()">Go</button></p> 
+        <textarea id="coords" name="coords" rows="4" cols="100"></textarea>&nbsp;<button id="rec" onclick="rec()">Record</button>
+    </div>
+<!-- <button id="cap" onclick="cap()">Cap</button><br/>
+    <button id="btn" onclick="capture()">Capture</button> -->
+    <div id="screencap">
+<!--    <form action = "http://127.0.0.1:8081/process_get" method = "GET"> -->
+    <!--<iframe id="iframe" name="my_iframe"></iframe> -->
+
+    <!--<form class="form" target="my_iframe"> -->
+    <form class="form"> 
+    <!--<form method="post" action="/process_get"> -->
+    <!--<form id="myForm" action = SubForm()> -->
+        <textarea name="coords" rows="4" cols="100"></textarea>
+        <button type="submit">Do Captures</button>
+     </form>
+
+     <!--<textarea name="coords" rows="4" cols="100"></textarea>&nbsp;<button id="submit" onclick="SubForm()">Capture</button> -->
+    </div>
+<script src="jscode.js"></script>
+</body>
+</html>
