@@ -101,12 +101,15 @@ app.post('/process_get', (req, res) => {
   // console.log(lines[0]); 
 })
 
-var server = app.listen(8081, function () {
+// const host = process.env.host; 
+const port = process.env.PORT || 8081 ;
+
+var server = app.listen(port, function () {
    var host = server.address().address
    var port = server.address().port
    // process.env.PORT || 8081
    // const port = process.env.PORT || 8081 ;
-   console.log("ScreenCapApp listening at http://%s:%s", host, port);
+   console.log("ScreenCapApp listening at: %s:%s", host, port);
 //   invoke_puptr(); 
 })
 
