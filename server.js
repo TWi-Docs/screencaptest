@@ -71,7 +71,7 @@ app.post('/process_get', (req, res) => {
          // console.log("Screen WIDTH: " + window.screen.availWidth);
    
          (async () => {
-            const browser = await puppeteer.launch({headless: false, ignoreDefaultArgs: ["--enable-automation","--disable-extensions"] /*, args: ['--start-maximized']*/ });
+            const browser = await puppeteer.launch({headless: false, ignoreDefaultArgs: ["--enable-automation","--disable-extensions"], args: ['--no-sandbox'] /*, args: ['--start-maximized']*/ });
             const page = await browser.newPage();
             await page.setViewport({ width: 1920, height: 1080});
             await page.goto(capURL);
